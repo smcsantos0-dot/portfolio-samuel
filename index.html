@@ -52,15 +52,15 @@
 </style><style>
 /* Foto pessoal em destaque, mantendo o tema vermelho e preto. */
 .hero-photo-wrap { display: flex; justify-content: center; margin-bottom: 22px; }
-.hero-photo { width: clamp(160px, 19vw, 245px); aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 3px solid #f3293b; box-shadow: 0 0 0 7px rgba(255,35,55,.10), 0 0 38px rgba(255,25,45,.32); }
-#header .profile-img img { border-color: #e63946 !important; }
+.hero-photo { width: clamp(180px, 20vw, 255px); height: auto; aspect-ratio: 1; object-fit: contain; border: 0; border-radius: 50%; box-shadow: 0 0 30px rgba(255,25,45,.13); }
+#header .profile-img img { width: 160px !important; height: 160px !important; object-fit: contain; border: 0 !important; border-radius: 50%; margin: 0 auto 12px; filter: drop-shadow(0 0 9px rgba(255,35,55,.18)); }
 @media (max-width: 991px) { .hero-photo-wrap { margin-top: 18px; } }
 </style>
 </head>
 <body class="index-page">
 <header class="header dark-background d-flex flex-column" id="header">
 <i class="header-toggle d-xl-none bi bi-list"></i>
-<div class="profile-img" style="text-align:center;"><img alt="Foto de perfil de Samuel Silva" src="assets/img/foto-samuel.png" style="width:120px;height:120px;object-fit:cover;border-radius:50%;display:block;margin:0 auto;border:4px solid #2b2b2b;"/></div>
+<div class="profile-img" style="text-align:center;"><img alt="Foto de perfil de Samuel Silva" src="assets/img/foto-samuel.png" /></div>
 <a class="logo d-flex align-items-center justify-content-center" href="index.html">
 <!-- Uncomment the line below if you also wish to use an image logo -->
 <!-- <img src="assets/img/logo.png" alt=""> -->
