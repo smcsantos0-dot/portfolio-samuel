@@ -92,6 +92,13 @@
   #hero .hero-visual .editor-title { font-size: .62rem; }
 }
 </style>
+<style>
+/* Hero: código à direita, sem foto grande sobreposta */
+#hero .hero-media-column { display:flex; align-items:center; justify-content:center; min-width:0; }
+#hero .hero-visual { position:relative; width:100%; max-width:620px; margin:0; transform:none; }
+#hero .hero-visual img { display:block; width:100%; height:auto; object-fit:contain; }
+@media(max-width:991px){ #hero .hero-media-column { margin-top:28px; } #hero .hero-visual { margin-inline:auto; } }
+</style>
 </head>
 <body class="index-page">
 <header class="header dark-background d-flex flex-column" id="header">
@@ -107,7 +114,17 @@
 </header>
 <main class="main">
 <!-- Hero Section -->
-<section class="hero section dark-background" id="hero"><div class="container-fluid"><div class="row align-items-center gy-5"><div class="col-lg-6"><div class="hero-kicker"><i class="bi bi-terminal-fill"></i> Bem-vindo ao meu portfólio</div><h2>Samuel Silva</h2><p>Eu sou <span aria-live="polite" class="typed" id="typed-role">Desenvolvedor Web</span><span aria-hidden="true" class="typed-caret"></span></p><p class="fs-6 mt-3">Crio experiências para a web e exploro o universo dos jogos.</p><div class="hero-features"><span><img src="assets/img/tecnologias/html5.svg" alt=""/> HTML5</span><span><img src="assets/img/tecnologias/css3.svg" alt=""/> CSS3</span><span><img src="assets/img/tecnologias/javascript.svg" alt=""/> JavaScript</span><span><img src="assets/img/tecnologias/bootstrap.svg" alt=""/> Bootstrap</span><span><img src="assets/img/tecnologias/unity.svg" alt=""/> Unity</span><span><img src="assets/img/tecnologias/nodejs.svg" alt=""/> Node.js</span></div><a class="btn-contact mt-4" href="#portfolio"><i class="bi bi-grid-3x3-gap-fill"></i> Ver portfólio</a></div><div class="col-lg-6 hero-media-column"><div class="hero-visual"><div class="editor-toolbar" aria-hidden="true"><span class="editor-dot"></span><span class="editor-dot"></span><span class="editor-dot"></span><span class="editor-title">Visual Studio Code · Projeto AVANTROX</span></div><img alt="Captura de tela do VS Code com código JavaScript do projeto Avantrox" src="assets/img/codigo-vscode.png"/><div class="visual-label"><i class="bi bi-code-square"></i> Programação e desenvolvimento de projetos</div></div></div></div></div></section><!-- /Hero Section -->
+<section class="hero section dark-background" id="hero"><div class="container-fluid"><div class="row align-items-center gy-5"><div class="col-12 col-lg-6"><div class="hero-kicker"><i class="bi bi-terminal-fill"></i> Bem-vindo ao meu portfólio</div><h2>Samuel Silva</h2><p>Eu sou <span aria-live="polite" class="typed" id="typed-role">Desenvolvedor Web</span><span aria-hidden="true" class="typed-caret"></span></p><p class="fs-6 mt-3">Crio experiências para a web e exploro o universo dos jogos.</p><div class="hero-features"><span><img src="assets/img/tecnologias/html5.svg" alt=""/> HTML5</span><span><img src="assets/img/tecnologias/css3.svg" alt=""/> CSS3</span><span><img src="assets/img/tecnologias/javascript.svg" alt=""/> JavaScript</span><span><img src="assets/img/tecnologias/bootstrap.svg" alt=""/> Bootstrap</span><span><img src="assets/img/tecnologias/unity.svg" alt=""/> Unity</span><span><img src="assets/img/tecnologias/nodejs.svg" alt=""/> Node.js</span></div><a class="btn-contact mt-4" href="#portfolio"><i class="bi bi-grid-3x3-gap-fill"></i> Ver portfólio</a></div>
+<div class="col-12 col-lg-6 hero-media-column">
+  <figure class="hero-visual" aria-label="Imagem do ambiente de programação">
+    <div class="editor-toolbar" aria-hidden="true">
+      <span class="editor-dot"></span><span class="editor-dot"></span><span class="editor-dot"></span>
+      <span class="editor-title">Visual Studio Code</span>
+    </div>
+    <img src="assets/img/codigo-vscode.png" alt="Editor Visual Studio Code com código de programação" loading="eager" />
+    <figcaption class="visual-label"><i class="bi bi-code-square"></i> Programação e desenvolvimento de projetos</figcaption>
+  </figure>
+</div></div></div></section><!-- /Hero Section -->
 <!-- About Section -->
 <section class="about section" id="about"><div class="container"><div class="section-title"><h2>Sobre mim</h2><p>Sou Samuel Silva, tenho 16 anos e estudo Programação Web. Estou desenvolvendo meus conhecimentos em HTML, CSS, JavaScript, Bootstrap, Node.js e Unity, com interesse em criar sites, aplicações e jogos. Meu objetivo é evoluir como desenvolvedor e construir projetos cada vez mais completos.</p></div><div class="row gy-4 align-items-center"><div class="col-lg-5"><figure class="about-code-figure"><img src="assets/img/portfolio-vscode.jpg" alt="Código JavaScript do projeto Avantrox no Visual Studio Code" loading="lazy"/><figcaption><i class="bi bi-code-square"></i> Um pouco do meu ambiente de desenvolvimento</figcaption></figure></div><div class="col-lg-7 content"><h2>Programação Web e desenvolvimento de jogos</h2><p>Gosto de transformar ideias em projetos e aprender na prática. Exploro tecnologias de desenvolvimento web e a criação de experiências interativas com Unity.</p><div class="row"><div class="col-md-6"><ul><li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> 16 anos</li><li><i class="bi bi-chevron-right"></i> <strong>Área:</strong> Programação Web</li><li><i class="bi bi-chevron-right"></i> <strong>Interesses:</strong> Sites e jogos</li></ul></div><div class="col-md-6"><ul><li><i class="bi bi-chevron-right"></i> <strong>Formação:</strong> Em andamento</li><li><i class="bi bi-chevron-right"></i> <strong>Ferramentas:</strong> Bootstrap, Node.js e Unity</li><li><i class="bi bi-chevron-right"></i> <strong>Objetivo:</strong> Atuar profissionalmente em tecnologia</li></ul></div></div></div></div></div></section><!-- /About Section -->
 <!-- Stats Section -->
